@@ -1,0 +1,72 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+typedef struct Nameval Nameval;
+
+struct Nameval {
+    char *name;
+    int value;
+};
+
+struct NVtab {
+    int nval;
+    int max;
+    Nameval *nameval;
+} nvtab;
+
+enum {NVINIT = 1, NVGROW = 10000000000000};
+
+int addname(Nameval newname);
+int delname(char *name);
+
+int main() {
+    int curnum1 = addname((Nameval){.name = "Andy", .value = 12});
+    printf("%d\n", curnum1);
+    int curnum2 = addname((Nameval){.name = "Billy", .value = 18});
+    printf("%d\n", curnum2);
+
+    addname((Nameval){.name = "Tom", .value = 15});
+    addname((Nameval){.name = "Pom", .value = 1});
+    addname((Nameval){.name = "Dom", .value = 7});
+    addname((Nameval){.name = "Rom", .value = 17});
+    addname((Nameval){.name = "Bom", .value = 13});
+
+    for (int i = 0; i < nvtab.nval; i++) {
+        printf("%s %d\n", nvtab.nameval[i].name, nvtab.nameval[i].value);    
+    }
+    free(nvtab.nameval);
+
+    return 0;
+}
+
+int addname(Nameval newname) {
+    if (nvtab.nameval == NULL) {
+        nvtab.nameval = (Nameval*) malloc(NVINIT * sizeof(Nameval));
+        if (nvtab.nameval == NULL) {
+            return -1;
+        }
+        nvtab.max = NVINIT;
+        nvtab.nval = 0;
+    } else if (nvtab.nval >= nvtab.max) {
+        nvtab.nameval = (Nameval *) realloc(nvtab.nameval, (NVGROW * nvtab.max) * sizeof(Nameval));
+
+        if (nvtab.nameval == NULL) {
+            return -1;
+        }
+        nvtab.max *= NVGROW;
+    }
+    nvtab.nameval[nvtab.nval] = newname;
+    return nvtab.nval++;
+}
+
+int delname(char *name) {
+    for (int i = 0; i < nvtab.nval; i++) {
+        if (strcmp(nvtab.nameval[i].name, name) == 0) {
+            memmove(nvtab.nameval + i, nvtab.nameval + i + 1, (nvtab.nval - (i + 1)) * sizeof(Nameval));
+            nvtab.nval--;
+            return 1;
+        }
+    }
+    return 0;
+}

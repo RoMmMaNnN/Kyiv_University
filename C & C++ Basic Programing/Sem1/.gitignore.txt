@@ -1,0 +1,8 @@
+# Ignore compiled files and IDE settings
+*.exe
+*.o
+*.obj
+*.out
+.vscode/
+.idea/
+*.log

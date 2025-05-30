@@ -1,0 +1,14 @@
+┌────────────────────────────────┬──────────────────────┬────────┐
+│          Назва книги           │        Автор         │  Рік   │
+├────────────────────────────────┼──────────────────────┼────────┤
+│ Node.js Design Patterns        │ Mario Casciaro       │ 2020   │
+│ Learning Node.js Development   │ Andrew Mead          │ 2018   │
+│ Node.js 14 Cookbook            │ David Mark Clements  │ 2021   │
+│ Mastering Node.js              │ Sandro Pasquali      │ 2017   │
+│ Node.js in Practice            │ Alex R. Young        │ 2014   │
+│ Pro Node.js for Developers     │ Colin J. Ihrig       │ 2013   │
+│ Beginning Node.js              │ Basarat Syed         │ 2014   │
+│ Fullstack Node.js              │ David Guttman        │ 2018   │
+│ REST Web API Design with Node  │ Valentin Bojinov     │ 2015   │
+│ Practical Node.js              │ Azat Mardan          │ 2018   │
+└────────────────────────────────┴──────────────────────┴────────┘

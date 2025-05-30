@@ -1,0 +1,14 @@
+┌────────────────────────────────┬──────────────────────┬────────┐
+│          Назва книги           │        Автор         │  Рік   │
+├────────────────────────────────┼──────────────────────┼────────┤
+│ Python Crash Course            │ Eric Matthes         │ 2019   │
+│ Automate the Boring Stuff      │ Al Sweigart          │ 2020   │
+│ Fluent Python                  │ Luciano Ramalho      │ 2022   │
+│ Python Cookbook                │ David Beazley        │ 2013   │
+│ Effective Python               │ Brett Slatkin        │ 2019   │
+│ Learning Python                │ Mark Lutz            │ 2013   │
+│ Python Tricks                  │ Dan Bader            │ 2017   │
+│ Python for Data Analysis       │ Wes McKinney         │ 2017   │
+│ Dive Into Python 3             │ Mark Pilgrim         │ 2012   │
+│ Serious Python                 │ Julien Danjou        │ 2018   │
+└────────────────────────────────┴──────────────────────┴────────┘

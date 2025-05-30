@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Lr11Kriu/Lr11Kriu.iml" filepath="$PROJECT_DIR$/Lr11Kriu/Lr11Kriu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lr12Kriu/Lr12Kriu.iml" filepath="$PROJECT_DIR$/Lr12Kriu/Lr12Kriu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Lr1Kriu.iml" filepath="$PROJECT_DIR$/.idea/Lr1Kriu.iml" />
+    </modules>
+  </component>
+</project>

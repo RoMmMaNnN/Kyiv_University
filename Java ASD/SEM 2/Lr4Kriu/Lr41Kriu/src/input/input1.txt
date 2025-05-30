@@ -1,0 +1,14 @@
+┌────────────────────────────────┬──────────────────────┬────────┐
+│          Назва книги           │        Автор         │  Рік   │
+├────────────────────────────────┼──────────────────────┼────────┤
+│ Effective Java                 │ Joshua Bloch         │ 2018   │
+│ Java: The Complete Reference   │ Herbert Schildt      │ 2019   │
+│ Head First Java                │ Kathy Sierra         │ 2005   │
+│ Java Concurrency in Practice   │ Brian Goetz          │ 2006   │
+│ Clean Code                     │ Robert C. Martin     │ 2008   │
+│ Thinking in Java               │ Bruce Eckel          │ 2006   │
+│ Java Performance               │ Scott Oaks           │ 2020   │
+│ Core Java Volume I             │ Cay S. Horstmann     │ 2021   │
+│ Java 8 in Action               │ Raoul-Gabriel Urma   │ 2014   │
+│ Spring in Action               │ Craig Walls          │ 2018   │
+└────────────────────────────────┴──────────────────────┴────────┘
